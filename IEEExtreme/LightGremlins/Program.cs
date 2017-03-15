@@ -59,7 +59,7 @@ namespace LightGremlins
                 {
                     if ((i & participents[j]) != 0)
                     {
-                        if ((gremlins[j] > minProblem || factor > minProblem && switches / factor < gremlins[j]))
+                        if ((factor > minProblem && switches / factor < gremlins[j]))
                         {
                             cofficent = 0;
                             break;

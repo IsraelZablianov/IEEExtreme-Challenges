@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XtremeDriving
 {
-    public class CowIndex
+    public class CowPlace
     {
         public long col;
         public long row;
@@ -20,24 +20,28 @@ namespace XtremeDriving
         public static long highwayLength;
         public static long cow = -1;
         public static int amountOfCows;
-        public static List<CowIndex> cows = new List<CowIndex>(100);
+        public static List<CowPlace> cows = new List<CowPlace>(100);
 
         static void Main(string[] args)
         {
             string input = Console.ReadLine();
             string[] values = input.Split(' ');
-            highwayLength = long.Parse(values[0]);
 
+            highwayLength = long.Parse(values[0]);
             amountOfCows = int.Parse(values[1]);
+
             string inputCow;
             string[] valuesCow;
+            long row;
+            long col;
+
             for (int i = 0; i < amountOfCows; i++)
             {
                 inputCow = Console.ReadLine();
                 valuesCow = inputCow.Split(' ');
-                long row = long.Parse(valuesCow[0]);
-                long col = long.Parse(valuesCow[1]);
-                cows.Add(new CowIndex() {row = row, col = col });
+                row = long.Parse(valuesCow[0]);
+                col = long.Parse(valuesCow[1]);
+                cows.Add(new CowPlace() {row = row, col = col });
             }
 
             cows.Sort((cow1, cow2)=> { return cow1.col > cow2.col ? 1 : cow1.col < cow2.col ? -1 : 0; });
@@ -47,6 +51,9 @@ namespace XtremeDriving
         public static long Result()
         {
             highway[0, 0] = 1;
+            long one;
+            long two;
+            long three;
 
             if (CheckIfZero())
             {
@@ -58,16 +65,10 @@ namespace XtremeDriving
                 SetCows(i);
                 for (int j = 0; j < rows; j++)
                 {
-                    if (highway[j, 1] != cow)
-                    {
-                        long one = (j - 1 >= 0) && (highway[j - 1, 0]) != cow ? highway[j - 1, 0] : 0;
-                        one = one % modolo;
-                        long two = highway[j, 0] != cow ? highway[j, 0] : 0;
-                        two = two % modolo;
-                        long three = (j + 1 < rows) && (highway[j + 1, 0]) != cow ? highway[j + 1, 0] : 0;
-                        three = three % modolo;
-                        highway[j, 1] = (((one + two) % modolo) + three) % modolo;
-                    }
+                    one = (j > 0 && (highway[j - 1, 0]) != cow ? highway[j - 1, 0] : 0) % modolo;
+                    two = (highway[j, 0] != cow ? highway[j, 0] : 0) % modolo;
+                    three = ((j + 1 < rows) && (highway[j + 1, 0]) != cow ? highway[j + 1, 0] : 0) % modolo;
+                    highway[j, 1] = highway[j, 1] != cow ? (((one + two) % modolo) + three) % modolo : cow;
                 }
                 ResetHighway();
             }
@@ -81,10 +82,10 @@ namespace XtremeDriving
             highway[1, 0] = highway[1, 1];
             highway[2, 0] = highway[2, 1];
             highway[3, 0] = highway[3, 1];
-            //highway[0, 1] = 0;
-            //highway[1, 1] = 0;
-            //highway[2, 1] = 0;
-            //highway[3, 1] = 0;
+            highway[0, 1] = 0;
+            highway[1, 1] = 0;
+            highway[2, 1] = 0;
+            highway[3, 1] = 0;
         }
 
         private static void SetCows(long col)
@@ -103,6 +104,13 @@ namespace XtremeDriving
             int blockBeforeEnd = 0;
             long prevCol = amountOfCows > 0 ? cows[0].col : 0;
             int block = 0;
+
+            int blockSteps3 = 0;
+            int blockSteps2 = 0;
+            long prevColSteps = prevCol;
+            long lastRow = amountOfCows > 0 ? cows[0].row : 0;
+
+
             for (int i = 0; i < amountOfCows; i++)
             {
                 if (cows[i].col == highwayLength - 1 && (cows[i].row == 0 || cows[i].row == 1))
@@ -113,6 +121,26 @@ namespace XtremeDriving
                 if (cows[i].col == highwayLength - 2 && (cows[i].row == 0 || cows[i].row == 1 || cows[i].row == 2))
                 {
                     blockBeforeEnd++;
+                }
+
+                if (cows[i].col == prevColSteps && cows[i].row == lastRow)
+                {
+                    blockSteps2++;
+                    blockSteps3++;
+                    lastRow++;
+                }
+                else if(cows[i].col == prevColSteps + 1 && cows[i].row >= lastRow - 1)
+                {
+                    blockSteps3++;
+                    blockSteps2++;
+                    lastRow++;
+                }
+                else
+                {
+                    prevColSteps = cows[i].col;
+                    lastRow = cows[i].row;
+                    blockSteps3 = 1;
+                    blockSteps2 = 1; 
                 }
 
                 if (cows[i].col == prevCol)
@@ -126,7 +154,7 @@ namespace XtremeDriving
                 }
             }
 
-            if (blockEnd == 2 || block == 4 || blockBeforeEnd == 3)
+            if (blockEnd == 2 || block == 4 || blockBeforeEnd == 3 || blockSteps3 + blockSteps2 >= 10)
             {
                 return true;
             }

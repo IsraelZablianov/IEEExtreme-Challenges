@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playing20QuestionsWithAnUnr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EllipseArt", "EllipseArt\EllipseArt.csproj", "{FD459A8D-C269-4C5C-AF6C-44FAF3A13F83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntiSet", "IntiSet\IntiSet.csproj", "{CAF2A178-DC3F-4A05-BA0F-B4DD448C305F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XtremeDriving", "XtremeDriving\XtremeDriving.csproj", "{D3D81BDE-BD37-441B-B04B-2AB782BA6C77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{FD459A8D-C269-4C5C-AF6C-44FAF3A13F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD459A8D-C269-4C5C-AF6C-44FAF3A13F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD459A8D-C269-4C5C-AF6C-44FAF3A13F83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF2A178-DC3F-4A05-BA0F-B4DD448C305F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF2A178-DC3F-4A05-BA0F-B4DD448C305F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF2A178-DC3F-4A05-BA0F-B4DD448C305F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF2A178-DC3F-4A05-BA0F-B4DD448C305F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D81BDE-BD37-441B-B04B-2AB782BA6C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D81BDE-BD37-441B-B04B-2AB782BA6C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D81BDE-BD37-441B-B04B-2AB782BA6C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D81BDE-BD37-441B-B04B-2AB782BA6C77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

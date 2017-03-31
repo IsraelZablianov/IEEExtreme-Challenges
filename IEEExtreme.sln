@@ -21,6 +21,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodTruck", "FoodTruck\Food
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryManagement", "MemoryManagement\MemoryManagement.csproj", "{E8825F34-AB23-4BBB-A31E-EB07FEEC1432}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPalindromes", "NPalindromes\NPalindromes.csproj", "{BFCA40A0-F2C5-4BB4-86ED-59B396675324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfStones", "GameOfStones\GameOfStones.csproj", "{535A3604-2792-411C-8D9F-455F0E378F6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowerGames", "FlowerGames\FlowerGames.csproj", "{29F2A6D3-8809-49FB-9D3B-63589026CF3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +69,18 @@ Global
 		{E8825F34-AB23-4BBB-A31E-EB07FEEC1432}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8825F34-AB23-4BBB-A31E-EB07FEEC1432}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8825F34-AB23-4BBB-A31E-EB07FEEC1432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFCA40A0-F2C5-4BB4-86ED-59B396675324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCA40A0-F2C5-4BB4-86ED-59B396675324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCA40A0-F2C5-4BB4-86ED-59B396675324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCA40A0-F2C5-4BB4-86ED-59B396675324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{535A3604-2792-411C-8D9F-455F0E378F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535A3604-2792-411C-8D9F-455F0E378F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535A3604-2792-411C-8D9F-455F0E378F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535A3604-2792-411C-8D9F-455F0E378F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F2A6D3-8809-49FB-9D3B-63589026CF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F2A6D3-8809-49FB-9D3B-63589026CF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F2A6D3-8809-49FB-9D3B-63589026CF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F2A6D3-8809-49FB-9D3B-63589026CF3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

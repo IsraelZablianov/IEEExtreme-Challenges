@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfStones", "GameOfStone
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowerGames", "FlowerGames\FlowerGames.csproj", "{29F2A6D3-8809-49FB-9D3B-63589026CF3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kabloom", "Kabloom\Kabloom.csproj", "{F6420EFB-2775-4DCF-99BA-84A82DB722ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{29F2A6D3-8809-49FB-9D3B-63589026CF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29F2A6D3-8809-49FB-9D3B-63589026CF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29F2A6D3-8809-49FB-9D3B-63589026CF3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6420EFB-2775-4DCF-99BA-84A82DB722ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6420EFB-2775-4DCF-99BA-84A82DB722ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6420EFB-2775-4DCF-99BA-84A82DB722ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6420EFB-2775-4DCF-99BA-84A82DB722ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

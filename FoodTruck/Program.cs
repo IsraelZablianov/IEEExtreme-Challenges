@@ -26,7 +26,7 @@ namespace FoodTruck
         public static double desiredRadius;
         public static int maxFileData = 5000000;
         public static List<Information> fileData = new List<Information>(maxFileData);
-        public static double pi = 3.14159265378;
+        public static double pi = 3.141592653589;
 
         static void Main(string[] args)
         {
@@ -82,17 +82,23 @@ namespace FoodTruck
                 var time = DateTime.ParseExact(values[0], format, culture);
                 var phoneNumber = long.Parse(values[3]);
 
-                if (dist < desiredRadius)
+                var info = fileData.Find(item => item.phoneNumber == phoneNumber);
+                if (info == null)
                 {
-                    var info = fileData.Find(item => item.phoneNumber == phoneNumber);
-                    if (info == null)
+                    if (dist < desiredRadius)
                     {
                         fileData.Add(new Information() { time = time, lat = lat, lon = lon, phoneNumber = phoneNumber, dist = dist });
                     }
-                    else if (info.time <= time)
+                }
+                else
+                {
+                    if (info.time <= time)
                     {
                         fileData.Remove(info);
-                        fileData.Add(new Information() { time = time, lat = lat, lon = lon, phoneNumber = phoneNumber, dist = dist });
+                        if (dist < desiredRadius)
+                        {
+                            fileData.Add(new Information() { time = time, lat = lat, lon = lon, phoneNumber = phoneNumber, dist = dist });
+                        }
                     }
                 }
             }

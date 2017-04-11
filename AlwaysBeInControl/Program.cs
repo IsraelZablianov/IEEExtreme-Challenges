@@ -135,58 +135,40 @@ namespace AlwaysBeInControl
 
         private static bool AtLeastTwoOutOfThreeSuccessiveValuesFallOnTheSameSideOfAndMoreThanTwoSigmaUnitsAwayFromTheCenterLine()
         {
-            var minAwayValue = CL + sigma * 2;
-            var maxAwayValue = CL - sigma * 2;
-
-            for (int i = 0; i < points.Count - 2; i++)
-            {
-                int countUp = 0, countDown = 0;
-                for (int j = 0; j < 3; j++)
-                {
-                    if (points[i + j] > minAwayValue) countUp++;
-                    if (points[i + j] < maxAwayValue) countDown++;
-                }
-                if (countUp >= 2 || countDown >= 2)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return CalcIfInControl(CL + sigma * 2, CL - sigma * 2, 2, 3);
         }
 
         private static bool AtLeastFourOutOfFiveSuccessiveValuesFallOnTheSameSideOfAndMoreThanOneSigmaUnitsAwayFromTheCenterLine()
         {
-            var minAwayValue = CL + sigma;
-            var maxAwayValue = CL - sigma;
-            for (int i = 0; i < points.Count - 4; i++)
-            {
-                int countUp = 0, countDown = 0;
-                for (int j = 0; j < 5; j++)
-                {
-                    if (points[i + j] > minAwayValue) countUp++;
-                    if (points[i + j] < maxAwayValue) countDown++;
-                }
-                if (countUp >= 4 || countDown >= 4)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return CalcIfInControl(CL + sigma, CL - sigma, 4, 5);
         }
 
         private static bool AtLeastEightSuccessiveValuesFallOnTheSameSideOfTheCenterLine()
         {
-            for (int i = 0; i < points.Count - 7; i++)
+            return CalcIfInControl(CL, CL, 7, 8);
+        }
+
+        private static bool CalcIfInControl(double minAwayValue, double maxAwayValue, int checForMin,int checkUpTo)
+        {
+            int above = 0, under = 0;
+
+            for (int i = 0; i < points.Count - checForMin; i++)
             {
-                int countUp = 0, countDown = 0;
-                for (int j = 0; j < 8; j++)
+                above = 0;
+                under = 0;
+                for (int j = 0; j < checkUpTo; j++)
                 {
-                    if (points[i + j] > CL) countUp++;
-                    if (points[i + j] < CL) countDown++;
+                    if (points[i + j] > minAwayValue)
+                    {
+                        above++;
+                    }
+                    if (points[i + j] < maxAwayValue)
+                    {
+                        under++;
+                    }
                 }
-                if (countUp == 8 || countDown == 8)
+
+                if (above >= checForMin || under >= checForMin)
                 {
                     return true;
                 }

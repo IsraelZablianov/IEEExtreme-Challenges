@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysBeInControl", "Always
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicSquare", "MagicSquare\MagicSquare.csproj", "{3D00E093-BCBE-4A70-BCAB-CD3D6AF5FA09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MrPipposPizza", "MrPipposPizza\MrPipposPizza.csproj", "{4EC4DF09-45C7-41EC-A0C2-24CD5F039BC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{3D00E093-BCBE-4A70-BCAB-CD3D6AF5FA09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D00E093-BCBE-4A70-BCAB-CD3D6AF5FA09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D00E093-BCBE-4A70-BCAB-CD3D6AF5FA09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC4DF09-45C7-41EC-A0C2-24CD5F039BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC4DF09-45C7-41EC-A0C2-24CD5F039BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC4DF09-45C7-41EC-A0C2-24CD5F039BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC4DF09-45C7-41EC-A0C2-24CD5F039BC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

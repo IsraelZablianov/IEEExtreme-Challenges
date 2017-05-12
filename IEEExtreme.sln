@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingMolecules", "Counti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightGremlins", "LightGremlins\LightGremlins.csproj", "{857781AC-3319-444F-BA80-3A951E228C2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playing20QuestionsWithAnUnreliableFriend", "Playing20QuestionsWithAnUnreliableFriend\Playing20QuestionsWithAnUnreliableFriend.csproj", "{5C69FFFB-541D-455D-95AB-F1E2B9526B33}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EllipseArt", "EllipseArt\EllipseArt.csproj", "{FD459A8D-C269-4C5C-AF6C-44FAF3A13F83}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntiSet", "IntiSet\IntiSet.csproj", "{CAF2A178-DC3F-4A05-BA0F-B4DD448C305F}"
@@ -59,10 +57,6 @@ Global
 		{857781AC-3319-444F-BA80-3A951E228C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{857781AC-3319-444F-BA80-3A951E228C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{857781AC-3319-444F-BA80-3A951E228C2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C69FFFB-541D-455D-95AB-F1E2B9526B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C69FFFB-541D-455D-95AB-F1E2B9526B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C69FFFB-541D-455D-95AB-F1E2B9526B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C69FFFB-541D-455D-95AB-F1E2B9526B33}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD459A8D-C269-4C5C-AF6C-44FAF3A13F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD459A8D-C269-4C5C-AF6C-44FAF3A13F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD459A8D-C269-4C5C-AF6C-44FAF3A13F83}.Release|Any CPU.ActiveCfg = Release|Any CPU

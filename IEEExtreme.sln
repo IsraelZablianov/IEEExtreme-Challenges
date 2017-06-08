@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitFun", "DigitFun\DigitF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomIn", "ZoomIn\ZoomIn.csproj", "{0907EBC6-9271-419E-886F-12F7BA0237A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XtreneInSecurity", "XtreneInSecurity\XtreneInSecurity.csproj", "{1EC18760-8A7D-4241-B311-22AA83884259}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{0907EBC6-9271-419E-886F-12F7BA0237A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0907EBC6-9271-419E-886F-12F7BA0237A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0907EBC6-9271-419E-886F-12F7BA0237A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EC18760-8A7D-4241-B311-22AA83884259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC18760-8A7D-4241-B311-22AA83884259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC18760-8A7D-4241-B311-22AA83884259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EC18760-8A7D-4241-B311-22AA83884259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

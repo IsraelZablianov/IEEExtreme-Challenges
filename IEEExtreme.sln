@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShorteningInTheRealWorld", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSpark", "CarSpark\CarSpark.csproj", "{E4410AFD-1E92-4D57-9844-23854A6E4098}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThatsSoCharacteristicallyEuler!", "ThatsSoCharacteristicallyEuler!\ThatsSoCharacteristicallyEuler!.csproj", "{996CAD1A-5351-4CA1-9059-6EE9F2ECDA49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{E4410AFD-1E92-4D57-9844-23854A6E4098}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4410AFD-1E92-4D57-9844-23854A6E4098}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4410AFD-1E92-4D57-9844-23854A6E4098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996CAD1A-5351-4CA1-9059-6EE9F2ECDA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996CAD1A-5351-4CA1-9059-6EE9F2ECDA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996CAD1A-5351-4CA1-9059-6EE9F2ECDA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996CAD1A-5351-4CA1-9059-6EE9F2ECDA49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
